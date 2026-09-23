@@ -1,39 +1,31 @@
-
-import UserCard from "./UserCard";
-
-function App()
+import { useState } from "react";
 
 
-  {
- 
-  return (
-    <>
-    <UserCard
-    name={"aamina abdi"}
-    email={"aaminagg@gmail.com"}
+function App(){
+const[turn,setTurn]= useState(false)
+const forTurn = ()=> {
+setTurn(!turn)
+}
 
+
+return(
+  <>
+    <p >The Button is  {turn ? 'off' : 'on'} </p>
     
-    />
-    <UserCard
-    name={"cismaan cali"}
-    email={"cisam@gmail.com"}
+    <button on onClick={forTurn}>Turn {turn ? 'on' : 'off'}</button>
+  </>
+)
 
-    
-    />
-    <UserCard
-    name={"ahmed"}
-    email={"ahmed@gmail.com"}
 
-    
-    />
-    <UserCard
-    name={"yasin"}
-    email={"yasing@gmail.com"}
 
-    
-    />
-    
-    </>
-  )
-  }
+
+
+
+
+
+
+
+}
+
+
 export default App;
