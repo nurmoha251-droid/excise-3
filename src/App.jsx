@@ -1,20 +1,39 @@
-import { useState } from "react";
-
+import {useEffect, useState} from 'react'
 
 function App(){
-const[turn,setTurn]= useState(false)
-const forTurn = ()=> {
-setTurn(!turn)
-}
+const [useeffect,setUseeffect] = useState("")
+
+const [user, setUser]= useState("Hello")
+      useEffect(() => {
+document.title=   [useeffect , user ] ;
+
+      });
+
+      // useEffect(()=>{
+      //    document.title=;
+   
+      // })
 
 
 return(
-  <>
-    <p >The Button is  {turn ? 'off' : 'on'} </p>
-    
-    <button on onClick={forTurn}>Turn {turn ? 'on' : 'off'}</button>
-  </>
+
+      <>
+  
+            <h2>Enter your name</h2>
+            <input
+             type="text"
+             value={useeffect}
+             onChange={(e)=>setUseeffect(e.target.value)} />
+            <h2>Choos Greeting:</h2>
+            <input
+             type="text"
+             value={user}
+             onChange={(e)=>setUser(e.target.value)} />
+
+
+      </>
 )
+
 
 
 
