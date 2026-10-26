@@ -1,35 +1,16 @@
-import { useEffect, useState } from "react";
-import UserList from "./UserList";
+import   useState  from "react";
+import Login from "./Login";
+
 function App() {
 
-const lists = []
-const items = null
+// const lists = []
+// const items = null
+
+
       return(
-            <div>     
 
-<UserList/>
-               {/* {   lists.length > 0  ? 
-               (   
+<Login/>
 
-      <ul>
-{
-  
-             
-            lists.map((list , index)=>(
-                  <li key={index}>{list}</li>
-            ))
-      
-}
-
-     
-</ul> ) : <p>this is empty</p>
-} */}
-
-{/* 
-{
-    items ? ( <p> {items.name} </p>): <p>this is empty</p>
-} */}
- </div>
       )
 }
 
