@@ -1,6 +1,7 @@
 import   useState  from "react";
 import DoubleCounter from "./DoubleCounter";
-// import Counter from "./Counter";
+import Counter from "./Counter";
+import Login from "./Login";
 
 function App() {
 
@@ -10,8 +11,8 @@ function App() {
 
       return(
 <> 
-
-{/* <Counter/> */}
+<Login/>
+<Counter/>
 
 <DoubleCounter/>
      </>  )
