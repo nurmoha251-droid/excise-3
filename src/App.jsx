@@ -1,6 +1,6 @@
 import   useState  from "react";
-
-import Counter from "./Counter";
+import DoubleCounter from "./DoubleCounter";
+// import Counter from "./Counter";
 
 function App() {
 
@@ -9,9 +9,12 @@ function App() {
 
 
       return(
+<> 
 
-<Counter/>
-      )
+{/* <Counter/> */}
+
+<DoubleCounter/>
+     </>  )
 }
 
 
