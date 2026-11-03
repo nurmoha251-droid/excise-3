@@ -2,6 +2,7 @@ import   useState  from "react";
 import ContactForm from "./ContactForm";
 import GitHubUserSearch from "./GitHubUserSearch";
 import MouseTracker from "./MouseTracker";
+import ShoppingCart from "./ShoppingCart";
 function App() {
 
 
@@ -9,7 +10,9 @@ function App() {
       return(
 <> 
 {/* <GitHubUserSearch /> */} 
-<MouseTracker />
+{/* <MouseTracker /> */}
+{/* <CartSummary />  */}
+<ShoppingCart />
   </>
       )
 }
