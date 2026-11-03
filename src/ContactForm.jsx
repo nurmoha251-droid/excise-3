@@ -5,6 +5,7 @@ const ContactForm = () => {
         email: "",
         message: "",
     });
+    
     const handleSubmit = (e) => {
         e.preventDefault();
     
