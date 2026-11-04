@@ -1,21 +1,11 @@
-import   useState  from "react";
-import ContactForm from "./ContactForm";
-import GitHubUserSearch from "./GitHubUserSearch";
-import MouseTracker from "./MouseTracker";
-import ShoppingCart from "./ShoppingCart";
-function App() {
+import Blog from './Blog';
 
-
-
-      return(
-<> 
-{/* <GitHubUserSearch /> */} 
-{/* <MouseTracker /> */}
-{/* <CartSummary />  */}
-<ShoppingCart />
-  </>
-      )
-}
-
+const App = () => {
+  return (
+    <div>
+      <Blog />
+    </div>
+  );
+};
 
 export default App;
